@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Pieces</title>
+    <meta name="description" content="Building products users love!">
+    <meta property="og:title" content="Building beautiful products" />
+    <meta property="og:url" content="https://faizdarvesh.com/" />
+    <meta property="og:description" content="Building products users love!">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/ogw/ADea4I4cNtImr2hkbiUV-OtXjPN90PiEIVX_MauN_mp0TQ=s83-c-mo">
+    
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+
+    <title>Building Beautiful Products</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -15,7 +26,7 @@
             <img id="mobile-navbar-bg" src="images/mobile-header-path.svg" alt="Background for the Mobile Navbar">
             
             <header>
-                <a class="logo" href="#">Product<span>Pieces</span></a>
+                <a class="logo" href="#">Faiz<span>Darvesh</span></a>
 
                 <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
@@ -23,9 +34,9 @@
                     <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
                     
                     <ul class="primary-nav">
-                        <li class="current"><a href="#">About Me</a></li>
+                        <li class="current"><a href="#subtitle">About Me</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="projects/scoreboard/scoreboard.html">Projects</a></li>
+                        <li><a href="projects/BasicTypingGame/">Projects</a></li>
                     </ul>
 
                     <ul class="secondary-nav">
@@ -49,7 +60,7 @@
             <a href="#name" class="primary-cta">
                 <img src="images/phone-call.png" alt="phone icon"> Let's chat
             </a>
-            <a href="#" class="projects-cta">
+            <a href="/projects/BasicTypingGame/" class="projects-cta">
                 <img src="images/dashboard.png" alt="Projects icon">Check out my projects
             </a>
         </div>
@@ -57,7 +68,7 @@
     </section>
 
     <section class="features">
-        <div class="subtitle">
+        <div class="subtitle" id="subtitle">
             <p>WHAT I <span>OFFER</span></p>
         </div>
         
@@ -65,16 +76,17 @@
         <li class="column card-left">
             <img src="images/Abacus.png" class="card-left-image" alt="Abacus image">
             <h3>DATA, USER AND MARKET INSIGHTS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi repellat perspiciatis rerum consequuntur repellendus?</p>
+            <p>What data to measure? Identify the right metrics to track and convert large data sets to actionable insights with analytics and reporting tools.</p>
             <a href="#" class="about-me-cta">
                 Find out more
-                <!-- <img src="#" alt="Arrow icon"> -->                </a>
+                <!-- <img src="#" alt="Arrow icon"> -->                
+            </a>
         </li>
         
         <li class="column card-centre">
-            <img src="images/price-tag.svg" class="card-left-image" alt="Abacus image">
+            <img src="images/price-tag.svg" class="card-left-image" alt="Pricing image">
             <h3>SOLUTION AND BUSINESS PLAN</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tenetur voluptates aut numquam atque!</p>
+            <p>Identify business opportunities based on insights from users, research and data. Assess the opportunities and build a profitable business plan!</p>
             <a href="#" class="about-me-cta">
                 Find out more
                 <!-- <img src="#" alt="Arrow icon"> -->
@@ -82,9 +94,9 @@
         </li>
         
         <li class="column card-right">
-            <img src="images/UI-UX-graphic.svg" class="card-right-image" alt="Abacus image">
+            <img src="images/UI-UX-graphic.svg" class="card-right-image" alt="Web Design image">
             <h3>USER EXPERIENCE AND UI DESIGN</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam veniam autem soluta quia, minima dolor ipsum assumenda.</p>
+            <p>Use UX and design principles to enhance user experience with the product, communicate your message effectively and drive target user action.</p>
             <a href="#" class="about-me-cta">
                 Find out more
                 <!-- <img src="#" alt="Arrow icon"> -->
@@ -92,9 +104,9 @@
         </li>
 
         <li class="column card-rightest">
-            <img src="images/UI-UX-graphic.svg" class="card-right-image" alt="Abacus image">
-            <h3>PRODUCT MANAGEMENT</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam veniam autem soluta quia, minima dolor ipsum assumenda.</p>
+            <img src="images/project-management.png" class="card-rightest-image" alt="Gantt chart">
+            <h3>PROJECT MANAGEMENT</h3>
+            <p>Build a project implementation plan, identify project targets / risks, and work with key stakeholders to plan, track and help with project delivery.</p>
             <a href="#" class="about-me-cta">
                 Find out more
                 <!-- <img src="#" alt="Arrow icon"> -->
@@ -114,26 +126,32 @@
         <div class="skill-container-1">
             <h5>DATA ANALYSIS</h5>
             <ul class="skill-label-1">
-                <li><img id="Excel-logo" src="images/excel.png" alt="Excel logo"></li>
-                <li><img id="Python-logo" src="images/python.png" alt="Python logo"></li>
                 <li><img id="SQL-logo" src="images/sql-server.png" alt="SQL logo"></li>
-                <li><img id="PowerBI-logo" src="images/dashboard.png" alt="Dashboard logo"></li>
+                <li><img id="Python-logo" src="images/python.png" alt="Python logo"></li>
+                <li><img id="Excel-logo" src="images/excel.png" alt="Excel logo"></li>
+                <li><img id="PowerBI-logo" src="images/power-bi-logo.png" alt="Dashboard logo"></li>
             </ul>
 
             <h5>UX / UI DESIGN</h5>
             <ul class="skill-label-2">
-                <li><img id="Excel-logo-2" src="images/excel.png" alt="Excel logo"></li>
-                <li><img id="Python-logo-2" src="images/python.png" alt="Python logo"></li>
-                <li><img id="SQL-logo-2" src="images/sql-server.png" alt="SQL logo"></li>
-                <li><img id="PowerBI-logo-2" src="images/dashboard.png" alt="Dashboard logo"></li>
+                <li><img id="Miro-logo" src="images/miro-logo.png" alt="Miro logo"></li>
+                <li><img id="Figma-logo" src="images/figma-logo.png" alt="Figma logo"></li>
+                <li><img id="AdobeXD-logo" src="images/adobe-xd.png" alt="AdobeXD logo"></li>
+                <li><img id="Photoshop-logo" src="images/photoshop.png" alt="Photoshop logo"></li>
+            </ul>
+
+            <h5>WEB DEVELOPMENT</h5>
+            <ul class="skill-label-2">
+                <li><img id="HTML-logo" src="images/html-5.png" alt="HTML logo"></li>
+                <li><img id="CSS-logo" src="images/css.png" alt="CSS logo"></li>
+                <li><img id="JS-logo" src="images/javascript.png" alt="Javascript logo"></li>
             </ul>
 
             <h5>PRODUCT MANAGEMENT</h5>
             <ul class="skill-label-3">
-                <li><img id="Excel-logo-3" src="images/excel.png" alt="Excel logo"></li>
-                <li><img id="Python-logo-3" src="images/python.png" alt="Python logo"></li>
-                <li><img id="SQL-logo-3" src="images/sql-server.png" alt="SQL logo"></li>
-                <li><img id="PowerBI-logo-3" src="images/dashboard.png" alt="Dashboard logo"></li>
+                <li><img id="Excel-logo-3" src="images/Aha(company)-Logo.png" alt="Excel logo"></li>
+                <li><img id="Python-logo-3" src="images/rally-logo.png" alt="Python logo"></li>
+                <li><img id="SQL-logo-3" src="images/PowerPoint_2013-2019_logo.png" alt="SQL logo"></li>
             </ul>
         </div>
 
@@ -157,7 +175,7 @@
 
         <div class="exp-3">
             <h4>2016 - 2017</h4>
-            <h2>Sr. Business Analyst <br><span>M . H. Alshaya</span></h2>
+            <h2>Senior Analyst <br><span>M . H. Alshaya</span></h2>
         </div>
 
         <a href="#" class="download-cv-cta" download="Faiz Darvesh - CV - Feb2021">

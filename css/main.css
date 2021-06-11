@@ -215,7 +215,7 @@ section.features .column {
 section.features .card-left, section.features .card-centre, section.features .card-right, section.features .card-rightest {
   margin-top: 2em;
   margin-bottom: 3em;
-  padding: 3em;
+  padding: 2.8em;
   background: white;
   width: 50%;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -233,7 +233,14 @@ section.features .card-left .card-left-image, section.features .card-centre .car
 }
 
 section.features .card-left .card-right-image, section.features .card-centre .card-right-image, section.features .card-right .card-right-image, section.features .card-rightest .card-right-image {
-  width: 60%;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.features .card-left .card-rightest-image, section.features .card-centre .card-rightest-image, section.features .card-right .card-rightest-image, section.features .card-rightest .card-rightest-image {
+  width: 35%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -758,7 +765,8 @@ section.social-media li a:hover {
     margin-bottom: 1.5em;
   }
   section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
-    width: 35px;
+    width: 40px;
+    height: 40px;
     margin: 0 2em 0 0;
   }
   section.experience {
@@ -921,7 +929,8 @@ section.social-media li a:hover {
     margin-bottom: 1.5em;
   }
   section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
-    width: 35px;
+    width: 40px;
+    height: 40px;
     margin: 0 2em 0 0;
   }
   section.experience {
@@ -1050,6 +1059,7 @@ section.social-media li a:hover {
   }
   section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
     width: 40px;
+    height: 40px;
     margin: 0 2em 0 0;
   }
   section.experience {
