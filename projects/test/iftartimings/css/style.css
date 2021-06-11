@@ -1,0 +1,298 @@
+body {
+  font-family: 'Poppins';
+}
+
+.headerimg img {
+  width: 100%;
+}
+
+.footerimg img {
+  width: 90%;
+  opacity: 0.5;
+  position: absolute;
+  left: 20%;
+  margin-left: -5%;
+}
+
+.container {
+  width: 90%;
+  border: solid 1px #b1b1b1;
+  -webkit-box-shadow: 3px 6px #c7c7c7;
+          box-shadow: 3px 6px #c7c7c7;
+}
+
+.container .heading {
+  padding: 1em 0 0 1em;
+  font-size: 0.95em;
+  color: #A38EE8;
+}
+
+.container .dropdownMenu {
+  padding: 0.2em 0 0 1em;
+  font-size: 0.8em;
+  margin-top: 2em;
+}
+
+.container .dropdownMenu p {
+  display: inline-block;
+  margin: 0;
+}
+
+.container .subheading {
+  padding: 0 0 0 1em;
+  font-size: 0.85em;
+}
+
+.container .timingcard {
+  display: block;
+  text-align: center;
+  margin: 1em 1em;
+  padding: 0.75em 0;
+  border-radius: 2%;
+}
+
+.container .timingcard #todaydateEng {
+  color: #b8b8b8;
+  margin-top: 0.8em;
+}
+
+.container .timingcard .Ramadancardlabel {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 0.7em;
+}
+
+.container .timingcard #todaydateRamadan {
+  font-size: 3em;
+  font-weight: light;
+  margin-bottom: 0.6em;
+}
+
+.container .timingcard .sehritime {
+  display: inline-block;
+  width: 40%;
+  margin: 0.5em 0;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+.container .timingcard .sehritime h5 {
+  margin-left: 0.5em;
+  display: inline-block;
+  font-size: 0.99em;
+}
+
+.container .timingcard .sehritime img {
+  width: 20px;
+  display: inline-block;
+}
+
+.container .timingcard .sehritime h3 {
+  color: #1b5a1b;
+}
+
+.container .timingcard .iftartime {
+  width: 40%;
+  float: right;
+  margin: 0.5em 0;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+.container .timingcard .iftartime h5 {
+  margin-left: 0.5em;
+  display: inline-block;
+  font-size: 0.99em;
+}
+
+.container .timingcard .iftartime img {
+  width: 20px;
+  display: inline-block;
+}
+
+.container .timingcard .iftartime h3 {
+  color: green;
+}
+
+.container .timingcard button {
+  width: 45%;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.container .timingcard button:hover {
+  -webkit-transform: translateY(-1px) scale(1.01);
+          transform: translateY(-1px) scale(1.01);
+}
+
+.container .timingcard .disablebutton {
+  background-color: #c4c4c4;
+  color: #757575;
+  border: none;
+}
+
+.container .timingcard .disablebutton:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.container .previousday {
+  margin-left: 7%;
+  display: inline-block;
+  width: 42%;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.container .previousday #previousdateEng {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.container .previousday #suhoortimeprevious {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.container .previousday #iftartimeprevious {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.container .previousday #timeconnectorprevious {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.container .nextday {
+  margin-right: 1%;
+  display: inline-block;
+  width: 42%;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.container .nextday #nextdateEng {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.container .nextday #suhoortimenext {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.container .nextday #iftartimenext {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.container .nextday #timeconnectornext {
+  display: inline-block;
+  font-size: 0.9em;
+}
+
+.duaarequest {
+  text-align: right;
+  font-size: 0.7em;
+  margin: 3em 0;
+  margin-right: 10%;
+}
+
+.sehridua {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2em 0.75em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #d6d6d6;
+  border-radius: 1%;
+}
+
+.sehridua .sdualabel {
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.sehridua .sduatext {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
+.sehridua .sduameaning {
+  font-size: 0.92em;
+}
+
+.iftardua {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2em 0.75em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c48600;
+  border-radius: 1%;
+}
+
+.iftardua .idualabel {
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.iftardua .iduatext {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
+.iftardua .iduameaning {
+  font-size: 0.92em;
+}
+
+@media only screen and (min-width: 600px) {
+  .headerimg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .footerimg img {
+    width: 50%;
+    opacity: 0.5;
+    position: absolute;
+    left: 30%;
+    margin-left: -5%;
+  }
+  .container {
+    width: 60%;
+  }
+  .container .timingcard .iftartime {
+    text-align: right;
+    display: inline-block;
+    width: 35%;
+    margin: 0.5em 2em 0.5em 0em;
+  }
+  .sehridua, .iftardua {
+    width: 45%;
+  }
+  .duaarequest {
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .headerimg img {
+    width: 50%;
+    z-index: -1;
+  }
+  .container {
+    width: 30%;
+  }
+  .sehridua, .iftardua {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

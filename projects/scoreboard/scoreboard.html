@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Score Tracker</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="bluebg"><span id="P1DisplayName"></span> vs <span id="P2DisplayName"></span> </div>
+    
+    <div class="card">
+        <img src="images/unsplash-scoreboard.jpg" alt="" class="scoregraphic">
+        
+        <div class="infoForm">
+            <h3 class="formtitle">Enter your information</h3>
+            
+            <label for="Player1Name" id="toplabel">Player 1 Name</label>
+            <input type="text" name="Player1Name" class="P1Name">
+            
+            <label for="Player2Name">Player 2 Name</label>
+            <input type="text" name="Player2Name" class="P2Name">
+    
+            <label for="MaxScore" id="dropdownlabel"> Playing to:</label>
+            <select name="MaxScore" id="maxscore">
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="11">11</option>
+                <option value="21">21</option>
+            </select>
+
+            <button class="PlayerInfobtn">Start Game</button>
+        </div>
+        
+        <div class="content hide">
+            <h1 class="MainTitle">Score Keeper</h1>
+            <p class="subtitle">Playing to <span id="maximum">3</span></p>
+
+            <h2 class="score"><span id="P1DN"></span><span id="P1score">0</span> to <span id="P2score">0</span><span id="P2DN"></span></h2>
+
+            <button class="btnP1Scoreup">+1 (Player 1)</button>
+            <button class="btnP2Scoreup">+1 (Player 2)</button>
+            <button class="btnP1Scoredown">-1 (P1)</button>
+            <button class="btnP2Scoredown">-1 (P2)</button>
+            <button class="btnreset">Reset Score</button>
+
+        </div>
+        
+        
+    </div>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>

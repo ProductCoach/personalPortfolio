@@ -1,0 +1,1069 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav {
+  display: none;
+}
+
+nav.menu-btn {
+  display: block;
+  position: fixed;
+  z-index: 999;
+  width: 50%;
+  right: 0;
+  top: 0;
+  background: #304B82;
+  opacity: 90%;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav.menu-btn ul.primary-nav {
+  margin-top: 5em;
+  display: block;
+}
+
+nav.menu-btn .mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+  width: 10%;
+}
+
+nav.menu-btn li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .8em;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+nav.menu-btn li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+  width: 1.5em;
+}
+
+#mobile-navbar-bg {
+  position: absolute;
+  z-index: -2;
+}
+
+#navbar-bg, #desktop-navbar-bg {
+  display: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0.5em 0.75em 1em;
+}
+
+header .logo {
+  margin-left: 0.5em;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+header .logo span {
+  color: #3978F2;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 9em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .content h1 {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: xx-large;
+  line-height: 1.2em;
+}
+
+.hero .content h1 span {
+  color: #3978F2;
+}
+
+.hero .content .hero-text {
+  display: none;
+}
+
+.hero .primary-cta {
+  background: #CAD9F4;
+  color: black;
+  text-decoration: none;
+  margin-top: 0.5em;
+  width: 35%;
+  padding: 0.5em 1.3em;
+  font-size: 1.2em;
+  border-radius: 0.6em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .primary-cta img {
+  width: 10%;
+  margin-right: 0.75em;
+}
+
+.hero .projects-cta {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+}
+
+.hero .projects-cta img {
+  width: 6%;
+  margin-right: 0.5em;
+}
+
+section.features {
+  margin-top: 4em;
+  background: #F8FAFF;
+  color: black;
+  margin-bottom: -5em;
+}
+
+section.features .subtitle p {
+  padding-top: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+section.features .subtitle p span {
+  color: #6C63FF;
+}
+
+section.features .column {
+  margin-left: auto;
+  margin-right: auto;
+  border: black;
+  border-width: thin;
+}
+
+section.features .card-left, section.features .card-centre, section.features .card-right, section.features .card-rightest {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding: 3em;
+  background: white;
+  width: 50%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 1em;
+}
+
+section.features .card-left .card-left-image, section.features .card-centre .card-left-image, section.features .card-right .card-left-image, section.features .card-rightest .card-left-image {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.features .card-left .card-right-image, section.features .card-centre .card-right-image, section.features .card-right .card-right-image, section.features .card-rightest .card-right-image {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.features .card-left h3, section.features .card-centre h3, section.features .card-right h3, section.features .card-rightest h3 {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+section.features .card-left p, section.features .card-centre p, section.features .card-right p, section.features .card-rightest p {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+section.features .card-left .about-me-cta, section.features .card-centre .about-me-cta, section.features .card-right .about-me-cta, section.features .card-rightest .about-me-cta {
+  background: #6C63FF;
+  color: white;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5em;
+  width: 75%;
+  padding: 0.5em 1.0em;
+  font-size: 0.8em;
+  border-radius: 0.6em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.features .card-rightest {
+  display: none;
+}
+
+section.features .white-bg {
+  position: relative;
+  height: 3em;
+  width: 100%;
+  color: white;
+  background: white;
+  margin-top: -8em;
+  z-index: -1;
+}
+
+section.skills {
+  display: none;
+}
+
+section.experience {
+  background: white;
+  padding-bottom: 2em;
+}
+
+section.experience .exp-subtitle {
+  margin-top: 14em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  color: #666666;
+}
+
+section.experience .exp-1, section.experience .exp-2, section.experience .exp-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 3em;
+}
+
+section.experience .exp-1 h2, section.experience .exp-2 h2, section.experience .exp-3 h2 {
+  margin-left: 2.5em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  padding-top: 0.2em;
+  line-height: 1.2em;
+}
+
+section.experience .exp-1 span, section.experience .exp-2 span, section.experience .exp-3 span {
+  font-weight: lighter;
+  margin-top: 0;
+  font-size: 0.7em;
+}
+
+section.experience .exp-2 h2, section.experience .exp-3 h2 {
+  margin-left: 3.7em;
+}
+
+section.experience .download-cv-cta {
+  background: none;
+  color: black;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 180px;
+  padding: 0.5em 0.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.6em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+section.experience .download-cv-cta img {
+  width: 15%;
+  margin-right: 0.5em;
+}
+
+section.testimonials {
+  background: #F3F6FF;
+  padding-bottom: 1.5em;
+}
+
+section.testimonials h3 {
+  padding-top: 1.5em;
+  text-align: center;
+  margin-bottom: 2.2em;
+}
+
+section.testimonials h3 span {
+  color: #43BA7F;
+}
+
+section.testimonials li {
+  background: #3E50F7;
+  text-align: left;
+  padding: 1.5em 0.5em;
+  width: 75%;
+  margin: 0 auto 2.5em auto;
+  color: white;
+  border: 1px solid #B5B5B5;
+  border-radius: 0 1.5em 1.5em 1.5em;
+}
+
+section.testimonials li img {
+  width: 3.5em;
+  height: 3.5em;
+  border: 2px solid #0a0d0f;
+  border-radius: 50%;
+  margin-top: .5em;
+  margin-left: 2em;
+}
+
+section.testimonials li cite {
+  margin-top: -4em;
+  margin-left: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+section.testimonials li p {
+  margin-top: -0.2em;
+  margin-left: 7em;
+}
+
+section.testimonials .testimonial-one {
+  background: white;
+  color: black;
+}
+
+section.testimonials .testimonial-three {
+  display: none;
+  background: white;
+  color: black;
+}
+
+section.contact-me {
+  text-transform: uppercase;
+  margin-top: 4em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+section.contact-me input, section.contact-me textarea {
+  width: 100%;
+  height: 2.2em;
+  margin-bottom: 1.5em;
+  border-radius: 0.1em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.contact-me textarea {
+  height: 7.5em;
+}
+
+section.contact-me .send-message-cta {
+  margin: 0 0 5em 0;
+  width: unset;
+  cursor: pointer;
+  background: #3E2093;
+  padding: 0.5em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 0.6em;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+}
+
+section.social-media {
+  background: #181d38;
+}
+
+section.social-media h2 {
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+  color: #926bff;
+}
+
+section.social-media li {
+  margin-left: 3em;
+  text-align: left;
+  padding: 1em 1em;
+  width: 80%;
+  margin: 0 auto 1.2em auto;
+  color: #c0bfc4;
+  border-radius: 1em;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.social-media li img {
+  margin-left: 3em;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 5em;
+}
+
+section.social-media li a {
+  color: #c0bfc4;
+}
+
+section.social-media li a:hover {
+  font-weight: bold;
+  color: #7d7ff3;
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 2em;
+  }
+  nav a:hover {
+    font-weight: bold;
+  }
+  nav .primary-nav {
+    font-size: 0.9em;
+    padding: 0.25em;
+    text-decoration: none;
+  }
+  nav .primary-nav a {
+    color: black;
+  }
+  nav .secondary-nav {
+    margin-left: 2em;
+    background-color: #3978F2;
+    padding: 0.12em 1em;
+    border-radius: 5em;
+    font-size: 0.95em;
+  }
+  nav .secondary-nav a {
+    color: white;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  #navbar-bg {
+    display: block;
+    position: absolute;
+    z-index: -2;
+  }
+  #mobile-navbar-bg {
+    display: none;
+  }
+  .hero-img {
+    margin-top: 8em;
+    width: 40%;
+  }
+  .hero .content {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .content .hero-text {
+    display: block;
+    font-size: 0.95em;
+    font-weight: 300;
+    margin-top: -0.5em;
+  }
+  .hero .primary-cta {
+    width: 150px;
+  }
+  .hero .primary-cta img {
+    width: 20px;
+  }
+  section.features .column {
+    width: 40%;
+  }
+  section.features .column .card-left .about-me-cta, section.features .column .card-centre .about-me-cta, section.features .column .card-right .about-me-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    margin-top: 2em;
+  }
+  section.skills {
+    display: none;
+  }
+  section.experience .download-cv-cta {
+    width: 200px;
+  }
+  section.contact-me {
+    margin-left: 15%;
+  }
+  section.contact-me label, section.contact-me .send-message-cta {
+    display: block;
+  }
+  section.contact-me input, section.contact-me textarea {
+    width: 80%;
+  }
+  .social-media ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  .social-media ul li img {
+    margin-right: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header .logo {
+    margin-left: 3em;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 3em;
+  }
+  nav a:hover {
+    font-weight: bold;
+  }
+  nav .primary-nav {
+    font-size: 0.9em;
+    padding: 0.25em;
+    text-decoration: none;
+    color: black;
+  }
+  nav .primary-nav li {
+    margin: 0 0.75em;
+  }
+  nav .secondary-nav {
+    margin-left: 2em;
+    background-color: #3978F2;
+    padding: 0.12em 1em;
+    border-radius: 5em;
+    font-size: 0.95em;
+  }
+  nav .secondary-nav a {
+    color: white;
+  }
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  #navbar-bg {
+    display: block;
+    position: absolute;
+    z-index: -2;
+  }
+  #mobile-navbar-bg {
+    display: none;
+  }
+  .hero {
+    margin: 8em 0;
+  }
+  .hero .content {
+    margin: 1em 1em;
+    text-align: left;
+    width: 65%;
+  }
+  .hero .content h1 {
+    margin-top: 4em;
+    margin-left: 1.4em;
+    font-size: 3em;
+    width: 450px;
+  }
+  .hero .content .hero-text {
+    font-size: 1.05em;
+    font-weight: 300;
+    width: 50%;
+    margin-top: -1em;
+    margin-left: 4.2em;
+  }
+  .hero .primary-cta {
+    display: block;
+    margin-left: 6.3em;
+    width: 120px;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    margin-top: 3em;
+  }
+  .hero .primary-cta img {
+    margin-top: 0.25em;
+    margin-bottom: -0.2em;
+    width: 15px;
+  }
+  .hero .projects-cta {
+    display: block;
+    width: 300px;
+    margin-left: 14em;
+    margin-top: -2em;
+  }
+  .hero-img {
+    float: right;
+    width: 35%;
+    margin-top: 0em;
+    margin-right: 3.5em;
+  }
+  section.features ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+  }
+  section.features ul .column {
+    width: 54%;
+    margin-left: 1em;
+    margin-right: auto;
+  }
+  section.features ul .card-left, section.features ul .card-centre, section.features ul .card-right, section.features ul .card-rightest {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  section.features ul .card-left .about-me-cta, section.features ul .card-centre .about-me-cta, section.features ul .card-right .about-me-cta, section.features ul .card-rightest .about-me-cta {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    width: auto;
+    display: none;
+  }
+  section.features ul .card-left:hover, section.features ul .card-centre:hover, section.features ul .card-right:hover, section.features ul .card-rightest:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  section.features ul .card-rightest {
+    display: block;
+    margin-right: 1em;
+  }
+  section.features .white-bg {
+    display: none;
+  }
+  section.skills {
+    margin: 8em 2em 1em 6em;
+    display: inline-block;
+  }
+  section.skills .skill-container-1 {
+    display: inline-block;
+    width: 100%;
+  }
+  section.skills .skill-label-1, section.skills .skill-label-2, section.skills .skill-label-3 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+  section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
+    width: 35px;
+    margin: 0 2em 0 0;
+  }
+  section.experience {
+    float: right;
+    margin-top: 7.3em;
+    margin-right: 15%;
+  }
+  section.experience .exp-subtitle {
+    margin-top: 2em;
+  }
+  section.experience .download-cv-cta {
+    width: 200px;
+  }
+  section.testimonials li {
+    width: 65%;
+  }
+  section.contact-me {
+    margin-left: 15%;
+  }
+  section.contact-me label, section.contact-me .send-message-cta {
+    display: block;
+  }
+  section.contact-me input, section.contact-me textarea {
+    width: 80%;
+  }
+  .social-media ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+  .social-media ul li img {
+    margin-right: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .logo {
+    margin-left: 10%;
+    font-size: 1.2em;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 10%;
+  }
+  nav .primary-nav {
+    font-size: 1em;
+    padding: 0.25em;
+    text-decoration: none;
+    color: black;
+  }
+  nav .primary-nav li {
+    margin: 0 0.75em;
+  }
+  nav .secondary-nav {
+    margin-left: 2em;
+    background-color: #3978F2;
+    padding: 0.3em 1em 0em 1em;
+    border-radius: 5em;
+    font-size: 0.95em;
+  }
+  nav .secondary-nav a {
+    color: white;
+  }
+  #mobile-navbar-bg, #navbar-bg {
+    display: none;
+  }
+  #desktop-navbar-bg {
+    display: block;
+    position: absolute;
+    z-index: -2;
+  }
+  .hero {
+    margin: 12em 0 10em 0;
+  }
+  .hero .content {
+    margin: 1em 10%;
+    text-align: left;
+    width: 50%;
+  }
+  .hero .content h1 {
+    margin-top: 0em;
+    margin-left: 0em;
+    font-size: 4em;
+    width: 600px;
+  }
+  .hero .content .hero-text {
+    font-size: 1.25em;
+    font-weight: 300;
+    width: 100%;
+    margin-top: -1em;
+    margin-left: 0;
+  }
+  .hero .hero-cta {
+    margin: 1em 10%;
+  }
+  .hero .primary-cta {
+    display: block;
+    margin-left: 0em;
+    width: 120px;
+    font-size: 0.92em;
+    text-transform: uppercase;
+    margin-top: 3em;
+  }
+  .hero .primary-cta img {
+    margin-top: 0.25em;
+    margin-bottom: -0.2em;
+    width: 15px;
+  }
+  .hero .projects-cta {
+    display: block;
+    width: 500px;
+    font-size: 1.1em;
+    margin-left: 4em;
+    margin-top: -2em;
+  }
+  .hero-img {
+    float: right;
+    width: 450px;
+    margin-top: -3em;
+    margin-right: 8%;
+  }
+  section.features {
+    padding-bottom: 2em;
+  }
+  section.features .subtitle {
+    margin-top: 10em;
+  }
+  section.features ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.features ul .card-left, section.features ul .card-centre, section.features ul .card-right, section.features ul .card-rightest {
+    margin: 0 1em 0 1em;
+  }
+  section.skills {
+    margin: 8em 2em 1em 20%;
+    display: inline-block;
+  }
+  section.skills .skill-container-1 {
+    display: inline-block;
+    width: 100%;
+  }
+  section.skills .skill-label-1, section.skills .skill-label-2, section.skills .skill-label-3 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
+  }
+  section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
+    width: 35px;
+    margin: 0 2em 0 0;
+  }
+  section.experience {
+    float: right;
+    margin-top: 7.3em;
+    margin-right: 20%;
+  }
+  section.experience .exp-subtitle {
+    margin-top: 2em;
+  }
+  section.experience .download-cv-cta {
+    width: 200px;
+    margin-left: 3.2em;
+  }
+  section.testimonials {
+    margin-top: 2em;
+  }
+  section.testimonials li {
+    width: 55%;
+  }
+  section.contact-me {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  section.contact-me label, section.contact-me .send-message-cta {
+    display: block;
+  }
+  section.contact-me input, section.contact-me textarea {
+    width: 100%;
+  }
+  .social-media .title {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .social-media ul {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .social-media ul li img {
+    margin-left: 0em;
+    margin-right: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  header .logo {
+    margin-left: 15%;
+    font-size: 1.4em;
+  }
+  nav {
+    margin-top: 0.4em;
+    margin-right: 15%;
+  }
+  nav a {
+    color: #27292b;
+  }
+  .hero {
+    margin: 12em 0 10em 0;
+  }
+  .hero .content {
+    margin: 1em 15%;
+    width: 45%;
+  }
+  .hero .content h1 {
+    font-size: 3.5em;
+    width: 500px;
+  }
+  .hero .content .hero-text {
+    font-size: 1.25em;
+    font-weight: 300;
+    width: 100%;
+    margin-top: -1em;
+    margin-left: 0;
+  }
+  .hero .hero-cta {
+    margin: 1em 15%;
+  }
+  .hero .primary-cta {
+    display: block;
+    margin-left: 0em;
+    width: 120px;
+    font-size: 0.92em;
+    text-transform: uppercase;
+    margin-top: 3em;
+  }
+  .hero .primary-cta img {
+    margin-top: 0.25em;
+    margin-bottom: -0.2em;
+    width: 15px;
+  }
+  .hero-img {
+    width: 500px;
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .hero-img {
+    width: 500px;
+    margin-right: 20%;
+  }
+  section.features .subtitle {
+    padding-top: 0.1em;
+    padding-bottom: 1.5em;
+  }
+  section.features ul {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.features ul .card-left, section.features ul .card-centre, section.features ul .card-right, section.features ul .card-rightest {
+    margin: 0 1em 0 1em;
+  }
+  section.skills {
+    margin: 8em 2em 1em 25%;
+    display: inline-block;
+  }
+  section.skills .skill-label-1, section.skills .skill-label-2, section.skills .skill-label-3 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2.4  em;
+  }
+  section.skills .skill-label-1 img, section.skills .skill-label-2 img, section.skills .skill-label-3 img {
+    width: 40px;
+    margin: 0 2em 0 0;
+  }
+  section.experience {
+    display: inline-block;
+    margin-top: 7.3em;
+    margin-right: 25%;
+  }
+  section.experience .download-cv-cta {
+    width: 200px;
+    margin-left: 3em;
+  }
+  section.contact-me {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

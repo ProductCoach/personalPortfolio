@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Poppins', 'Calibri';
+    background-color: white;
+}
+
+.bluebg{
+    background-color: rgb(53, 53, 207);
+    height: 30vh;
+    margin: 0;
+
+    font-size: 3em;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    color: rgb(104, 104, 230);
+    
+
+    #P1DisplayName, #P2DisplayName {
+        text-align: center;
+        display: inline-block;
+        font-size: 0.5em;
+        color: rgb(83, 83, 182);
+        
+    }
+}
+
+.card {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: -8em;
+
+    // padding: 2em 3em;
+
+    background-color: white;
+    
+    // border: 0.5px solid rgb(172, 172, 172);
+    border-radius: 1em;
+    box-shadow: 0 3px 6px 0 rgb(88, 88, 88);
+}
+
+.infoForm {
+
+    .formtitle {
+        margin: 2em 2.5em;
+    }
+
+    label {
+        width: 25%;
+        display: block;
+        margin-left: 3em;
+    }
+
+    #toplabel {
+        width: 24%;
+        margin-top: 2em;
+    }
+    
+    input {
+        display: block;
+        width: 75%;
+        margin-left: 3.5em;
+        margin-bottom: 3em;
+        border-color: rgb(212, 212, 212);
+    }
+
+    #dropdownlabel {
+        display: inline-block;
+    }
+
+    select {
+        display: inline-block;
+        margin-left: 0em;
+        font-size: 1.05em;
+        width: 4em;
+    }
+
+    .PlayerInfobtn {
+        display: block;
+        width: 100%;
+        margin-top: 2em;
+        padding: 1.5em 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    border-radius: 1em 1em 0 0;
+}
+
+.content {
+    margin: 0 1em;
+}
+
+.MainTitle {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin: 0;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid rgb(226, 226, 226)   ;
+
+    #maximum {
+        font-size: 1em;        
+    }
+}
+
+.score {
+    font-size: 1.5em;
+
+    #P1DN, #P2DN {
+        font-size: 0.75em;
+    }
+
+    #P1score, #P2score {
+        font-size: 2em;
+        padding: 0 0.25em;
+    }
+
+}
+
+button {
+    display: inline-block;
+    width: 48%;
+    margin: .2em 0.5%;
+
+    border: none;
+    padding: 0.75em 0;
+
+    font-size: 0.95em;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btnreset {
+    width: 47.5%;
+    margin-bottom: 2em;
+    background-color: white;
+    color: #5e72e4;
+    border: 1px solid rgba(190, 190, 190, 0.5);
+    // box-shadow: 0 1px 1px rgb(50, 50, 93, 0.11);
+
+    &:hover {
+        background-color: #5e72e4;
+        color: white;
+        transform: none;
+    }
+}
+
+.btnP1Scoreup {
+    background-color: #34D1B2;
+    color: white;
+}
+
+.btnP2Scoreup {
+    background-color: #91CD56;
+    color: white;
+}
+
+.btnP1Scoredown {
+    background-color: #dd421b;
+    color: white;
+    width: 23%;
+}
+
+.btnP2Scoredown {
+    background-color: #e77416;
+    color: white;
+    width: 23%;
+}
+
+.winningPlayer {
+    color: #2dce89;
+}
+
+.losingPlayer {
+    color: #f5365c;
+}
+
+.btnnotusable {
+    background-color: rgb(196, 196, 196);
+    color: rgb(117, 117, 117);
+
+    &:hover {
+        transform: none;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+    .card {
+        width: 37%;
+    }
+
+    .content {
+        padding: 0 1.5em;
+    }
+
+    .bluebg{
+        
+        font-size: 10em;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+        color: rgb(104, 104, 230);
+        
+    
+        #P1DisplayName, #P2DisplayName {
+            text-align: center;
+            display: inline-block;
+            font-size: 0.5em;
+            color: rgb(83, 83, 182);
+            
+        }
+    }
+}
